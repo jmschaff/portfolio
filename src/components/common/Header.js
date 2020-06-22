@@ -1,22 +1,19 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import { BASE_URL, ABOUT_URL } from "../../constants/Constants";
 
 function Header() {
   const activeStyle = { color: "orange" };
   return (
-    <nav>
-      <NavLink activeStyle={activeStyle} exact to="/">
-        Home
-      </NavLink>
-      {" | "}
-      <NavLink activeStyle={activeStyle} to="/courses">
-        About
-      </NavLink>
-      {" | "}
-      <NavLink activeStyle={activeStyle} to="/about">
-        Resume
-      </NavLink>
-    </nav>
+    <Navbar bg="light" varaint="light">
+      <Navbar.Brand href={BASE_URL}>Jack Schaffer</Navbar.Brand>
+      <Nav>
+        <Nav.Link activeStyle={activeStyle} href={ABOUT_URL}>
+          About
+        </Nav.Link>
+      </Nav>
+    </Navbar>
   );
 }
 
