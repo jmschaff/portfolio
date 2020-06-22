@@ -2,7 +2,6 @@ import React from "react";
 import { ToastContainer } from "react-toastify";
 import { Route, Switch, Redirect } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
-import "./App.css";
 import Header from "./common/Header";
 import HomePage from "./HomePage";
 
