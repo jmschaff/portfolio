@@ -1,5 +1,5 @@
-export const BASE_URL = "/portfolio";
+export const HOMEPAGE_URL = "/";
 
-export const ABOUT_URL = BASE_URL + "/about";
+export const ABOUT_URL = "/about";
 
-export const EXPERIENCE_URL = BASE_URL + "/experience";
+export const EXPERIENCE_URL = "/experience";
